@@ -23,17 +23,17 @@
 <body class="d-flex flex-column h-100 main-bg">
     <!--Header section contains logo, signup page link button and navbar menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Goodlife</a>
+        <a class="navbar-brand" href="{% url 'get_base_page' %}">Goodlife</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{% url 'get_base_page' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="{% url 'get_about_page' %}">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_signup' %}">Become A Member</a>
@@ -50,11 +50,17 @@
           </ul>
         </div>
       </nav>
-
+      
       <main class="flex-shrink-0 main-bg">
 
         {% block content %}
         <!-- Content Goes here -->
+        <div class="container-fluid">
+          <div class="row">
+              <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+      
+      </div>
         {% endblock content %}
     </main>
 
