@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Racing+Sans+One&family=Raleway:wght@100;400&display=swap');
+
+.logo {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+
+.logo-bar a {
+    color: #CD3700;
+}
+
+.login-button{
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+}
+
+.float {
+    float: right;
+}
+
+.nav-login{
+    float: right;
+}
+
+.navbar{
+    background-color: #0e2133;
+    height: 5rem;
+    
+}
+
+.navbar a {
+    color: #CD3700;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.overlay{
+    background-color: #212529;
+
+}
+
+.card{
+    width: 20rem;
+    height: 24rem;
+}
+
+.card-header{
+    background-color: #0e2133;
+    color: #fa561b;
+}
+
+.card-position{
+    margin-left: 8em;
+    margin-top: 10em;
+}
+
+footer {
+    height: 300px;
+    background-color: #0e2133;
+}
+
+.contact-us{
+    margin-top: 3rem;
+    letter-spacing: 3px;
+    color: silver;
+}
+
+.media-links{
+    color: #CD3700;
+    font-size: medium;
+}
+
+.media-links i {
+    font-size: 200%;
+    margin: 1px;
+    padding: 10px;
+    color: #CD3700;
+    clear: both;
+}

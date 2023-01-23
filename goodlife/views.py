@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views import generic, View
 from .models import Photo
 
 # Create your views here.
