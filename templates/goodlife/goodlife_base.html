@@ -12,10 +12,11 @@
     <!--Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/apple-touch-icon.png">
@@ -43,7 +44,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'get_base_page' %}">Home <span class="sr-only">(current)</span></a>
@@ -57,23 +58,23 @@
           </ul>
         </div>
       </nav>
+  
       
       <main class="flex-shrink-0 main-bg">
 
         {% block content %}
         <!-- Content Goes here -->
-        <div class="container-fluid">
-          <div class="row">
+          <div class="row hero-image no-gutters">
               <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
           </div>
-      </div>
-      <div class="container-fluid">
-      <div class="row card-position">
+  
+      <div class="container-fluid card-shadow">
+      <div class="row card-position no-gutters">
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card home-card-dimension">
             <div class="card-header text-center">Header</div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title text-center">What we offer</h5>
               <ul class="list-unstyled">
                 <li><i class="fa-solid fa-check"></i> Onboarding machine tutorial</li>
                 <li><i class="fa-solid fa-check"></i> Try our intense training classes</li>
@@ -82,16 +83,15 @@
                 <li><i class="fa-solid fa-check"></i> Progress monitored meal plan</li>
                 <li><i class="fa-solid fa-check"></i> Outdoor training</li>
             </ul>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card home-card-dimension">
             <div class="card-header text-center">Header</div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <ul class="list-unstyled">
+              <h5 class="card-title text-center">Train in comfort</h5>
+              <ul class="list-unstyled ">
                 <li><i class="fa-solid fa-check"></i> Opened area training spaces</li>
                 <li><i class="fa-solid fa-check"></i> Special designed training equipments</li>
                 <li><i class="fa-solid fa-check"></i> Air condition comfort training</li>
@@ -99,17 +99,22 @@
                 <li><i class="fa-solid fa-check"></i> Wind down in the Sauna</li>
                 <li><i class="fa-solid fa-check"></i> Try our Protein and Snack bar</li>
             </ul>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
       </div>
       </div>
-      <div class="container-fluid">
-        <div class="row center d-inline">
-          <div class="d-inline">Intro Trainer1</div>
-          <div class="d-inline">Intro Trainer2</div>
-          <div class="d-inline">Intro Trainer3</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img class="mr-3 about-image" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img class="mr-3 about-image" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img class="mr-3 about-image" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+          </div>
         </div>
       </div>
         {% endblock content %}

@@ -5,6 +5,7 @@
     font-size: 3rem;
     font-weight: 900;
     
+    
 }
 
 .logo-bar a {
@@ -44,24 +45,45 @@
     float: right;
 }
 
+.hero-image {
+    background-image: url('static/images/heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .overlay{
     background-color: #212529;
 
 }
 
-.card{
+.home-card-dimension{
     width: 20rem;
     height: 24rem;
+    box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.2);
+    line-height: 40px;
 }
+   
 
 .card-header{
     background-color: #0e2133;
-    color: #fa561b;
+    color: #CD3700;
+    font-size: larger;
 }
 
 .card-position{
     margin-left: 8em;
-    margin-top: 10em;
+    margin-top: 6em;
+}    
+
+.card-body i{
+    color: rgb(64, 224, 64);
+    
+}
+
+.about-card-position {
+    margin-left: 2em;
+    margin-top: 6em;
+    
 }
 
 footer {
@@ -86,4 +108,25 @@ footer {
     padding: 10px;
     color: #CD3700;
     clear: both;
+}
+
+.about-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.about-text {
+    margin-top: 4rem;
+    color:#CD3700;
+    height: 300px;
+    width: 50%;
+    border-radius: 40px;
+    line-height: 2rem;
+    font-size: 1rem;
+
 }
