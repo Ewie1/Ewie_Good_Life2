@@ -1,8 +1,6 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +15,6 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     
-
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/apple-touch-icon.png">
 
@@ -68,10 +65,10 @@
               <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
           </div>
   
-      <div class="container-fluid card-shadow">
+      <div class="container-fluid">
       <div class="row card-position no-gutters">
         <div class="col-sm-6">
-          <div class="card home-card-dimension">
+          <div class="card shadow home-card-dimension">
             <div class="card-header text-center">Header</div>
             <div class="card-body">
               <h5 class="card-title text-center">What we offer</h5>
@@ -87,7 +84,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card home-card-dimension">
+          <div class="card shadow home-card-dimension">
             <div class="card-header text-center">Header</div>
             <div class="card-body">
               <h5 class="card-title text-center">Train in comfort</h5>
@@ -104,16 +101,62 @@
         </div>
       </div>
       </div>
-      <div class="container">
+      <div class="col-sm-12 text-center get-trainer">
+        <h2>Book A Introducion Trainer!</h2>
+        <p><a href="{% url 'account_signup' %}">Signup</a> and book a free Personal Trainer for a week!</p>
+      </div>
+      <div class="container-fliud">
         <div class="row">
+          <h3 class="text-center">Meet our Team:</h3>
           <div class="col-md-4 col-sm-12">
-            <img class="mr-3 about-image" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+            <img class="mr-3 justify-content-center trainer" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
           </div>
           <div class="col-md-4 col-sm-12">
-            <img class="mr-3 about-image" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+            <img class="mr-3 trainer" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
           </div>
           <div class="col-md-4 col-sm-12">
-            <img class="mr-3 about-image" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+            <img class="mr-3 trainer" src="static/images/outdoorimage.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-6 mt-3 col-sm-12">
+        <h3>Opening Times</h3>
+        <table>
+            <tr>
+                <th>Monday</th>
+                <td>5am - 10pm</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>5am - 10pm</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>5am - 10pm</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>5am - 10pm</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>5am - 8pm</td>
+            </tr>
+            <tr>
+                <th>Weekends</th>
+                <td>6am - 9pm</td>
+            </tr>
+        </table>
+        </div>
+        <div class=" col-md-6 col-sm-12 bottom-image"></div>
+    </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 mt-3 text-center">
+            <h3>Find Us Here</h3>
+            <iframe style="width: 100%;"
+            src="https://maps.google.com/maps?q=%20Fleminggatan%202,%20112%2026%20Stockholm,%20Sweden&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
           </div>
         </div>
       </div>

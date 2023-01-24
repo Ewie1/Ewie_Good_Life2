@@ -51,10 +51,6 @@
     background-position: center;
 }
 
-.overlay{
-    background-color: #212529;
-
-}
 
 .home-card-dimension{
     width: 20rem;
@@ -71,7 +67,7 @@
 }
 
 .card-position{
-    margin-left: 8em;
+    margin-left: 12em;
     margin-top: 6em;
 }    
 
@@ -82,9 +78,29 @@
 
 .about-card-position {
     margin-left: 2em;
-    margin-top: 6em;
-    
+    margin-top: 6em;  
 }
+
+.get-trainer {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.trainer-row {
+    margin-left: 8rem;
+}
+
+.trainer {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
 
 footer {
     height: 300px;
@@ -122,11 +138,41 @@ footer {
 
 .about-text {
     margin-top: 4rem;
-    color:#CD3700;
     height: 300px;
     width: 50%;
     border-radius: 40px;
     line-height: 2rem;
     font-size: 1rem;
+}
 
+.mem-card-color{
+    background-color: #0e2133;
+}
+
+.mem-card-color p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #CD3700;
+    margin-top: 5rem;
+}
+
+.card-shadow {
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-signup {
+    background-color: #0e2133;
+    color: #CD3700;
+    border-radius: 5px;
+}
+.bottom-image {
+    height: 170px;
+    width: 50%;
+    background: url('../images/map2.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    border: 5px solid #0e2133;
+    overflow: hidden;
 }
