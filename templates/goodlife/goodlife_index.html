@@ -1,7 +1,17 @@
-
+{% extends "goodlife/goodlife_base.html" %}
 
 {% block content %}
 
-{{ booking }}
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 m-3">
+            <form method="post" action="{% url 'account_login'%}">
+                {{ booking }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">submit</button>
+            </form>
+        </div>
+    </div>
+</div> 
 {%endblock%}
