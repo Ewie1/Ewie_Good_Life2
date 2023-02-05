@@ -23,5 +23,4 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('goodlife_train.html', get_about_page, name='get_about_page'),
     path('goodlife_index.html', book_trainer, name='book_trainer'),
-   #path('book_trainer/', include('goodlife.urls'))
 ]
