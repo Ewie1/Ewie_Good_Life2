@@ -3,7 +3,7 @@
 {% block content %}
 
 
-<div class="container">
+<div class="container" id="modal-1">
     <div class="row">
         <div class="col-12 m-3">
             <form method="post" action="{% url 'account_login'%}">
@@ -14,4 +14,14 @@
         </div>
     </div>
 </div> 
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 mt-3 text-center">
+        <h3>Find Us Here</h3>
+        <iframe style="width: 100%;"
+        src="https://maps.google.com/maps?q=%20Fleminggatan%202,%20112%2026%20Stockholm,%20Sweden&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
 {%endblock%}
+<script src="static/js/book.js"></script>
