@@ -101,7 +101,7 @@
     margin-left: 7rem;
 }
 
-.background-greyout {
+/*.background-greyout {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -111,11 +111,25 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.5); 
     z-index: 2; 
-}
+}*/
 
-.booking-image {
-    z-index: 2;
-    
+/*.booking-image {
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.5);
+}*/
+
+.overlay {
+    background: url('../images/signupimage.jpeg')no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+   /* background: rgba(0,0,0,0.5);*/
 }
 
 .booking-form {
@@ -123,9 +137,28 @@
     padding-top: 80px;
     background-color: #fff;
     z-index: 2;
-    text-align: center;
-    
-    position:static;
+    text-align: center; 
+    border: 1px solid black;
+}
+
+hr {
+    width: 80%;
+    margin-left: 110px;
+}
+
+/* .booking-form button { 
+    display: block;
+    margin-left: 50%;
+    margin-top: 50px;
+/* } */
+
+.btn-primary {
+    margin-top: 50px;
+    margin-left: 40%;
+    display: block;
+    width: 200px;
+    background: #CD3700;
+    border: none;
 }
 
 
@@ -189,9 +222,11 @@ footer {
 }
 
 .btn-signup {
-    background-color: #0e2133;
-    color: #CD3700;
+    width: 200px;
+    background: #CD3700;
+    border: none;
     border-radius: 5px;
+    color: #fff;
 }
 .bottom-image {
     height: 170px;

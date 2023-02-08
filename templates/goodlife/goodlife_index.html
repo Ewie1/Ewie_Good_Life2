@@ -1,10 +1,10 @@
 {% extends "goodlife/goodlife_base.html" %}
 
 {% block content %}
-
-<div class="row booking-image no-gutters">
+<!--<div class="row booking-image no-gutters">
   <img src="static/images/signupimage .jpeg" class="img-fluid" alt="Responsive image">
-</div>
+</div>-->
+<div class="overlay"></div>
 <div class="background-greyout">
 <div class="container" id="modal-1">
     <div class="row">
@@ -12,6 +12,7 @@
             <form class="booking-form" method="POST" action="{% url 'get_base_page'%}">
                 {{ booking }}
                 {% csrf_token %}
+                <hr>
                 <button type="submit" class="btn btn-primary">submit</button>
             </form>
         </div>
@@ -21,7 +22,7 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 mt-3 text-center">
-        <h3>Find Us Here</h3>
+        <h3 style="color:#CD3700;">Find Us Here</h3>
         <iframe style="width: 100%;"
         src="https://maps.google.com/maps?q=%20Fleminggatan%202,%20112%2026%20Stockholm,%20Sweden&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
       </div>
