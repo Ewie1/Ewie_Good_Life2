@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from django.views import generic, View
-from .models import Photo
-from .models import BookTrainer
 from goodlife.models import BookTrainer
 from .forms import BookTrainerForm
 
@@ -18,6 +16,16 @@ def get_about_page(request):
 
 def book_trainer(request):
     booking = BookTrainerForm()
+
+    if request.method == 'POST':
+        booking = BookTrainerForm(data=request.POST)
+
+        if booking.is_valid():
+            booking.save()
+            print('hello')
+        else:
+            booking = BookTrainerForm()
+
     context = {
         'booking': booking
     }
