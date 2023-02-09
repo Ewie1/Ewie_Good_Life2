@@ -18,15 +18,15 @@ def book_trainer(request):
     booking = BookTrainerForm()
 
     if request.method == 'POST':
-        booking = BookTrainerForm(data=request.POST)
+        booking = BookTrainerForm(request.POST)
 
         if booking.is_valid():
-            booking.save()
-            print('hello')
-        else:
-            booking = BookTrainerForm()
+            reservation = booking.save(commit=True)
+            reservation.save()
 
     context = {
         'booking': booking
     }
     return render(request, 'goodlife/goodlife_index.html', context)
+
+
