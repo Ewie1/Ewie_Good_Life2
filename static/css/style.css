@@ -49,6 +49,20 @@
     background-position: center;
 }
 
+.welcome {
+    text-align: center;
+    font-size: large;
+    margin-top: 40px;
+}
+
+.welcome h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
 .home-card-dimension{
     width: 20rem;
     height: 24rem;
@@ -60,6 +74,7 @@
     background-color: #0e2133;
     color: #CD3700;
     font-size: larger;
+    font-weight: 900;
 }
 
 .card-position{
@@ -82,13 +97,18 @@
     margin-bottom: 8rem;
 }
 
+.get-trainer h3 {
+    font-weight: 900;
+    font-style: italic;
+}
+
 .trainer-row {
     margin-left: 8rem;
 }
 
 .trainer {
     height: 100%;
-    width: 150px;
+    width: 50%;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -192,6 +212,11 @@ footer {
     clear: both;
 }
 
+.about-header{
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 30px;
+}
 .about-image {
     height: 300px;
     width: 300px;
@@ -221,6 +246,15 @@ footer {
     font-weight: 900;
     color: #CD3700;
     margin-top: 5rem;
+}
+
+.mem-card-color a {
+    color: #CD3700;
+}
+
+.mem-card-color a:hover {
+    font-size: 1.8rem;
+    
 }
 
 .card-shadow {

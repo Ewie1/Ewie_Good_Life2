@@ -61,17 +61,24 @@
 
         {% block content %}
         <!-- Content Goes here -->
-          <div class="row hero-image no-gutters">
-              <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
+        <div class="row hero-image no-gutters">
+          <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      <div class="welcome container">
+        <div class="row">
+          <div class="col-sm-12">
+        <h3>Welcome to GoodLife where life is heathier and happier!</h3>
+        <p>Make your life good through the fitness and health, 
+          so that you have access to what you need to feel mastery, progress and can take care of your physical and mental health. We give you all the tools you need to reach your goals.</p>
           </div>
-  
+        </div>
+      </div>
       <div class="container-fluid">
       <div class="row card-position no-gutters">
         <div class="col-sm-6">
           <div class="card shadow home-card-dimension">
-            <div class="card-header text-center">Header</div>
+            <div class="card-header text-center">What we offer</div>
             <div class="card-body">
-              <h5 class="card-title text-center">What we offer</h5>
               <ul class="list-unstyled">
                 <li><i class="fa-solid fa-check"></i> Onboarding machine tutorial</li>
                 <li><i class="fa-solid fa-check"></i> Try our intense training classes</li>
@@ -85,9 +92,8 @@
         </div>
         <div class="col-sm-6">
           <div class="card shadow home-card-dimension">
-            <div class="card-header text-center">Header</div>
+            <div class="card-header text-center">Train in comfort</div>
             <div class="card-body">
-              <h5 class="card-title text-center">Train in comfort</h5>
               <ul class="list-unstyled ">
                 <li><i class="fa-solid fa-check"></i> Opened area training spaces</li>
                 <li><i class="fa-solid fa-check"></i> Special designed training equipments</li>
@@ -102,7 +108,7 @@
       </div>
       </div>
       <div class="col-sm-12 text-center get-trainer">
-        <h2>Book A Introducion Trainer!</h2>
+        <h3>Book A Introducion Trainer!</h3>
         <p><a href="{% url 'account_signup' %}">Signup</a> and book a free Personal Trainer for a week!</p>
       </div>
       <div class="container">
