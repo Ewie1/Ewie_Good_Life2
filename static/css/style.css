@@ -4,8 +4,6 @@
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 900;
-    
-    
 }
 
 .logo-bar a {
@@ -51,7 +49,6 @@
     background-position: center;
 }
 
-
 .home-card-dimension{
     width: 20rem;
     height: 24rem;
@@ -59,7 +56,6 @@
     line-height: 40px;
 }
    
-
 .card-header{
     background-color: #0e2133;
     color: #CD3700;
@@ -91,14 +87,19 @@
 }
 
 .trainer {
-    height: 150px;
+    height: 100%;
     width: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    border-radius: 20px;
     background-size: cover;
     background-position: center;
     margin-top: 2rem;
     margin-left: 7rem;
+    z-index: 1;
+}
+
+.trainer:hover {
+    box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.2);
+    
 }
 
 /*.background-greyout {
@@ -144,8 +145,7 @@
 }
 
 hr {
-    width: 80%;
-    margin-left: 110px;
+    width: 60%;
 }
 
 /* .booking-form button { 
@@ -163,8 +163,12 @@ hr {
     border: none;
 }
 
+.map {
+    margin-top: 200px;
+}
 
 footer {
+    
     height: 300px;
     background-color: #0e2133;
 }
