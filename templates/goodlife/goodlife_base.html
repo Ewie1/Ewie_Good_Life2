@@ -41,20 +41,33 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'get_base_page' %}">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'get_base_page' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'get_about_page' %}">About</a>
+              <a class="nav-link active" href="{% url 'get_about_page' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'account_signup' %}">Become A Member</a>
+              <a class="nav-link member-nav" href="{% url 'account_signup' %}">Become A Member</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags}} alert-dismissible fade show" id="msg" role="alert">
+                  {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
   
       
       <main class="flex-shrink-0 main-bg">
@@ -108,7 +121,7 @@
       </div>
       </div>
       <div class="col-sm-12 text-center get-trainer">
-        <h3>Book A Introducion Trainer!</h3>
+        <h3>Book A Introduction Trainer!</h3>
         <p><a href="{% url 'account_signup' %}">Signup</a> and book a free Personal Trainer for a week!</p>
       </div>
       <div class="container">

@@ -28,5 +28,3 @@ def book_trainer(request):
         'booking': booking
     }
     return render(request, 'goodlife/goodlife_index.html', context)
-
-

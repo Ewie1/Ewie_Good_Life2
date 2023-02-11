@@ -11,36 +11,46 @@
 }
 
 .login-button{
-    color: white;
-    border-radius: 10px;
     font-size: medium;
     letter-spacing: 0.3rem;
     font-weight: 600;
     margin-top: 0.5rem;
     margin-right: 3rem;
-}
-
-.float {
     float: right;
 }
 
-.nav-login{
-    float: right;
+.login-button a:hover {
+    color: #cf5b30;
 }
 
 .navbar{
     background-color: #0e2133;
     height: 5rem;
-    
 }
 
 .navbar a {
     color: #CD3700;
     text-transform: uppercase;
+    margin-right: 30px;
+    font-size: 1.2rem;
+}  
+
+.member-nav {
+    border: 1px solid #CD3700;
+    border-radius: 10px;
 }
 
-.navbar-nav {
-    float: right;
+.active:hover {
+    border-bottom: 2px solid #CD3700;
+    color: #CD3700;
+}
+
+.member-nav:hover {
+    color: #cf5b30;
+}
+
+.login-message {
+    z-index: 2;
 }
 
 .hero-image {
@@ -68,6 +78,7 @@
     height: 24rem;
     box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.2);
     line-height: 40px;
+    border-radius: 15px;
 }
    
 .card-header{
@@ -100,6 +111,15 @@
 .get-trainer h3 {
     font-weight: 900;
     font-style: italic;
+}
+
+.get-trainer a {
+    text-decoration: none;
+    color: #CD3700;
+}
+
+.get-trainer a:hover {
+    border-bottom: 1px solid #CD3700;
 }
 
 .trainer-row {
@@ -141,6 +161,12 @@
     background: rgba(0,0,0,0.5);
 }*/
 
+.booking-header {
+    text-align: center;
+    height: 300px;
+    margin-top: 50px;
+}
+
 .overlay {
     background: url('../images/signupimage.jpeg')no-repeat center center;
     background-size: cover;
@@ -156,11 +182,12 @@
 .booking-form {
     height: 300px;
     padding-top: 80px;
+    margin-top: -200px;
+    margin-bottom: 200px;
     background-color: #fff;
     z-index: 2;
     text-align: center; 
-    border: 1px solid black;
-    background-color: rgba(240, 240, 240, 0.888);
+    background-color: rgba(240, 240, 240, 0.888); 
     border-radius: 5px;
 }
 
