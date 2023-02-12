@@ -43,6 +43,7 @@
 .active:hover {
     border-bottom: 2px solid #CD3700;
     color: #CD3700;
+    transition: 0.1s;
 }
 
 .member-nav:hover {
@@ -120,6 +121,7 @@
 
 .get-trainer a:hover {
     border-bottom: 1px solid #CD3700;
+    transition: 0.5s;
 }
 
 .trainer-row {
@@ -139,6 +141,7 @@
 
 .trainer:hover {
     box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
     
 }
 
@@ -214,6 +217,42 @@ hr {
     margin-top: 200px;
 }
 
+.register-form h1, 
+.login-form h1 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.register-form a, 
+.login-form a {
+    text-decoration: none;
+    color: #CD3700;
+}
+
+.register-form a:hover, 
+.login-form a:hover {
+    color: #CD3700;
+    border-bottom: 1px solid #CD3700;
+    transition: 0.5s;
+}
+
+
+.login.form a {
+    text-decoration: none;
+    color: #CD3700;
+}
+
+.btn-signup, 
+.primaryAction {
+    height: 40px;
+    width: 200px;
+    background: #CD3700;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid black;
+}
+
 footer {
     
     height: 300px;
@@ -281,20 +320,13 @@ footer {
 
 .mem-card-color a:hover {
     font-size: 1.8rem;
-    
+    transition: 0.5s; 
 }
 
 .card-shadow {
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn-signup {
-    width: 200px;
-    background: #CD3700;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-}
 .bottom-image {
     height: 170px;
     width: 50%;
