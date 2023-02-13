@@ -21,8 +21,8 @@
     <title>Good Life</title>
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
-    <!--Header section contains logo, signup page link button and navbar menu -->
+<body>
+         <!--Header section contains logo, signup page link button and navbar menu -->
     <nav class="logo-bar">
       <a class="navbar-brand logo" href="{% url 'get_base_page' %}">Goodlife</a>
         <ul class="navbar-nav login-button">
@@ -67,15 +67,15 @@
             </div>
         </div>
     </div>
-
   
-      
       <main class="flex-shrink-0 main-bg">
 
         {% block content %}
         <!-- Content Goes here -->
-        <div class="row hero-image no-gutters">
-          <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
+        <div class="row no-gutters">
+          <div class="col-sm-12">
+            <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
+          </div>
         </div>
       <div class="welcome container">
         <div class="row">
@@ -86,8 +86,8 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-      <div class="row card-position no-gutters">
+      <div class="container">
+      <div class="row card-position ">
         <div class="col-sm-6">
           <div class="card shadow home-card-dimension">
             <div class="card-header text-center">What we offer</div>
@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 card-2">
           <div class="card shadow home-card-dimension">
             <div class="card-header text-center">Train in comfort</div>
             <div class="card-body">
@@ -230,6 +230,7 @@
     <!-- font awesome script-->
     <script src="https://kit.fontawesome.com/4847b8087f.js" crossorigin="anonymous"></script>
     <script src="static/js/book.js"></script>
+    
 </body>
 
 </html>

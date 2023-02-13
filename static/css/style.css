@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Racing+Sans+One&family=Raleway:wght@100;400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+/**/
 .logo {
     text-transform: uppercase;
     font-size: 3rem;
@@ -19,12 +24,14 @@
     float: right;
 }
 
+/**/
 .login-button a:hover {
     color: #cf5b30;
 }
 
+/**/
 .navbar{
-    background-color: #0e2133;
+    background-color: #0e2133; 
     height: 5rem;
 }
 
@@ -35,11 +42,13 @@
     font-size: 1.2rem;
 }  
 
+/**/
 .member-nav {
     border: 1px solid #CD3700;
     border-radius: 10px;
 }
 
+/**/
 .active:hover {
     border-bottom: 2px solid #CD3700;
     color: #CD3700;
@@ -50,16 +59,22 @@
     color: #cf5b30;
 }
 
+/**/
 .login-message {
     z-index: 2;
 }
 
+/**/
 .hero-image {
-    background-image: url('static/images/heroimage.jpg');
+    height: 500px;
+    width: 100%;
+    background: url('../images/heroimage.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
+    padding-right: 15px;
 }
 
+/**/
 .welcome {
     text-align: center;
     font-size: large;
@@ -74,6 +89,7 @@
     font-style: italic;
 }
 
+/**/
 .home-card-dimension{
     width: 20rem;
     height: 24rem;
@@ -95,8 +111,7 @@
 }    
 
 .card-body i{
-    color: rgb(64, 224, 64);
-    
+    color: rgb(64, 224, 64);  
 }
 
 .about-card-position {
@@ -104,6 +119,7 @@
     margin-top: 6em;  
 }
 
+/**/
 .get-trainer {
     margin-top: 6rem;
     margin-bottom: 8rem;
@@ -114,6 +130,7 @@
     font-style: italic;
 }
 
+/**/
 .get-trainer a {
     text-decoration: none;
     color: #CD3700;
@@ -128,6 +145,7 @@
     margin-left: 8rem;
 }
 
+/**/
 .trainer {
     height: 100%;
     width: 50%;
@@ -176,7 +194,6 @@
     background-position: center;
     z-index: -1;
     position: absolute;
-    width: 100%;
     height: 100%;
     display: block;
    /* background: rgba(0,0,0,0.5);*/
@@ -218,7 +235,9 @@ hr {
 }
 
 .register-form h1, 
-.login-form h1 {
+.login-form h1, 
+.logout-form h3, 
+.booking-header h3 {
     font-weight: 900;
     font-style: italic;
 }
@@ -236,14 +255,9 @@ hr {
     transition: 0.5s;
 }
 
-
-.login.form a {
-    text-decoration: none;
-    color: #CD3700;
-}
-
 .btn-signup, 
-.primaryAction {
+.primaryAction, 
+.btn-logout {
     height: 40px;
     width: 200px;
     background: #CD3700;
@@ -254,13 +268,11 @@ hr {
 }
 
 footer {
-    
     height: 300px;
     background-color: #0e2133;
 }
 
 .contact-us{
-    margin-top: 3rem;
     letter-spacing: 3px;
     color: silver;
 }
@@ -327,13 +339,165 @@ footer {
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.bottom-image {
-    height: 170px;
-    width: 50%;
-    background: url('../images/map2.jpg')no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    border: 5px solid #0e2133;
-    overflow: hidden;
+
+/*For large to medium screens sizes from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+
+    .logo {
+        font-size: 3rem;
+        background-color: aqua;
+    }
+    
+    
+    /**/
+    .login-message {
+        z-index: 2;
+    }
+    
+    /**/
+    .welcome {
+        text-align: center;
+        font-size: large;
+        margin-top: 40px;
+    }
+    
+    .welcome h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    
+    .card-position{
+        display: block;
+
+    } 
+    
+    .card-2 {
+        margin-top: 50px;
+    }
+    
+    
+    /**/
+    .get-trainer {
+        margin-bottom: 4rem;
+    }
+    
+    
+    
+    /**/
+    .trainer {
+        width: 100%;
+        margin-left: 1rem;
+    }
+    
+    .trainer:hover {
+        box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        
+    }
+    
+    
+    .booking-header {
+        text-align: center;
+        height: 300px;
+        margin-top: 50px;
+    }
+    
+    .overlay {
+        background: url('../images/signupimage.jpeg')no-repeat center center;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        display: block;
+       /* background: rgba(0,0,0,0.5);*/
+    }
+    
+    .booking-form {
+        height: 300px;
+        padding-top: 80px;
+        margin-top: -200px;
+        margin-bottom: 200px;
+        background-color: #fff;
+        z-index: 2;
+        text-align: center; 
+        background-color: rgba(240, 240, 240, 0.888); 
+        border-radius: 5px;
+    }
+    
+    hr {
+        width: 60%;
+    }
+    
+    /* .booking-form button { 
+        display: block;
+        margin-left: 50%;
+        margin-top: 50px;
+    /* } */
+    
+    .btn-primary {
+        margin-top: 50px;
+        margin-left: 40%;
+        display: block;
+        width: 200px;
+        background: #CD3700;
+        border: none;
+    }
+    
+    .map {
+        margin-top: 100px;
+    }
+
 }
+
+/*  For medium screens sizes from 950px wide and down */
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        font-size: 1.5rem;
+        background-color: aqua;
+    }
+
+    .login-button{
+        height: 20px;
+        font-size: 1rem;
+        margin-top: -2px;
+        margin-right: 1rem;
+        letter-spacing: 0.2rem;
+
+    }
+
+    .navbar {
+        height: 3rem;
+    }
+    
+    .map {
+        width: 100%;
+    }
+
+    .welcome {
+        font-size: 0.8rem;
+    }
+
+    .card-position{
+       display: none;
+    } 
+
+   
+
+    .trainer {
+        height: 80%;
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .get-trainer {
+        font-size: 0.8rem;
+    }
+}
+    
