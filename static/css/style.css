@@ -317,7 +317,9 @@ footer {
     font-weight: 900;
     font-style: italic;
     margin-top: 30px;
+    font-size: 2rem;
 }
+
 .about-image {
     height: 300px;
     width: 300px;
@@ -326,6 +328,7 @@ footer {
     background-size: cover;
     background-position: center;
     margin-top: 2rem;
+    margin-left: 50px;
 }
 
 .about-text {
@@ -334,7 +337,7 @@ footer {
     width: 50%;
     border-radius: 40px;
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .mem-card-position {
@@ -485,6 +488,14 @@ footer {
         font-style: italic;
         margin-top: 30px;
     }
+
+    .about-image {
+        margin-left: 0px;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+    }
     
     .about-text-1 {
         margin-top: -3rem;
@@ -492,7 +503,7 @@ footer {
     }
 
     .about-text-2 {
-        margin-right: 20px;
+        margin-left: 40px;
     }
 
     .about-text-3 {
@@ -548,9 +559,16 @@ footer {
         font-size: 0.8rem;
     }
 
-    .card-position{
-       margin-left: -20px;
+    .card-position{ 
+       margin-left: 18px;
     } 
+
+    .home-card-dimension{
+        height: 90%;
+        width: 90%;
+        line-height: 30px;
+        font-size: 0.7rem;
+    }
 
     .card-2 {
         margin-top: 50px;
@@ -567,23 +585,13 @@ footer {
     }
 
     .about-text {
-        margin-top: 4rem;
         height: 100%;
         width: 100%;
         border-radius: 40px;
         line-height: 2rem;
         font-size: 1rem;
-        position: relative;
     }
-
-    #about-image-2 {
-        display:;
-    }
-
-    #about-image-3 {
-        display: ;
-    }
-
+    
     .about-text-1 {
         text-align: center;
         margin-left: 0px;
@@ -591,12 +599,15 @@ footer {
 
     .about-text-2 {
         text-align: center;
-        margin-left: 20px;
+        margin-left: 0px;
+        margin-top: -30px;
     }
 
     .about-text-3 {
         text-align: center;
         margin-left: 0px;
+        margin-top: -30px;
+        margin-bottom: 30px;
     }
 
     .contact-us {
