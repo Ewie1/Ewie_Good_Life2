@@ -79,7 +79,7 @@
           </ul>
         </div>
       </nav>-->
-      <div class="container">
+      <div class="container" tabindex="-1">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 {% for message in messages %}
@@ -149,22 +149,25 @@
         <p><a href="{% url 'account_signup' %}">Signup</a> and book a free Personal Trainer for a week!</p>
       </div>
       <div class="container">
-        <div class="row">
-          <h3 class="text-center">Meet our Team:</h3>
+        <div class="row select-trainer">
+          <h3 class="text-center">Select a Trainer:</h3>
           <div class="col-md-4 col-sm-12">
             <a href="{% url 'book_trainer' %}">
               <img class="mr-3 justify-content-center trainer" src="static/images/trainer3.jpg" alt="Generic placeholder image">
             </a>
+            <p>Frank</p>
           </div>
           <div class="col-md-4 col-sm-12">
             <a href="{% url 'book_trainer' %}">
             <img class="mr-3 trainer" src="static/images/trainer4.jpg" alt="Generic placeholder image">
             </a>
+            <p>Oscar</p>
           </div>
           <div class="col-md-4 col-sm-12">
             <a href="{% url 'book_trainer' %}">
             <img class="mr-3 trainer" src="static/images/trainer5.jpg" alt="Generic placeholder image">
             </a>
+            <p>Frida</p>
           </div>
         </div>
       </div>

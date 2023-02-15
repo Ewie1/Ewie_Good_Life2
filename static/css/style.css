@@ -145,10 +145,15 @@
 /**/
 .get-trainer {
     margin-top: 6rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .get-trainer h3 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.select-trainer h3 {
     font-weight: 900;
     font-style: italic;
 }
@@ -162,6 +167,13 @@
 .get-trainer a:hover {
     border-bottom: 1px solid #CD3700;
     transition: 0.5s;
+}
+
+.select-trainer p {
+    text-align: center;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 400;
 }
 
 .trainer-row {
@@ -513,6 +525,11 @@ footer {
     .mem-card-position {
         margin-left: -1rem;
         margin-top: 30px;
+    }
+
+    .select-trainer p {
+        text-align: center;
+        margin-left: 0px;
     }
     
 
