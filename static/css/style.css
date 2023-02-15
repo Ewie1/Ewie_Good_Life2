@@ -132,9 +132,9 @@
 }
 
 .card-position{
-    margin-left: 12em;
-    margin-top: 6em;
-}    
+    margin-left: 8rem;
+    margin-top: 80px;
+}  
 
 .card-body i{
     color: rgb(64, 224, 64);  
@@ -403,13 +403,15 @@ footer {
     
     
     .card-position{
-        display: block;
+        margin-top: 50px;
+        margin-left: 0px;
+        
 
     } 
     
-    .card-2 {
+    /*.card-2 {
         margin-top: 50px;
-    }
+    }*/
     
     
     /**/
@@ -547,8 +549,12 @@ footer {
     }
 
     .card-position{
-       display: ;
+       margin-left: -20px;
     } 
+
+    .card-2 {
+        margin-top: 50px;
+    }
 
     .trainer {
         height: 80%;
