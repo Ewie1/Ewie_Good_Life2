@@ -5,6 +5,11 @@
     padding: 0;
 }
 /**/
+.top-bar {
+    background-color: #0e2133;
+    padding: 10px;
+}
+
 .logo {
     text-transform: uppercase;
     font-size: 3rem;
@@ -15,37 +20,16 @@
     color: #CD3700;
 }
 
-.login-button{
-    font-size: medium;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    margin-right: 3rem;
-    float: right;
-}
-
-/**/
-.login-button a:hover {
-    color: #cf5b30;
-}
-
-/**/
-.navbar{
-    background-color: #0e2133; 
-    height: 5rem;
-}
-
-.navbar a {
-    color: #CD3700;
-    text-transform: uppercase;
-    margin-right: 30px;
-    font-size: 1.2rem;
-}  
-
 /**/
 .member-nav {
+    font-weight: 600;
     border: 1px solid #CD3700;
     border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 3rem;
+    float: right;
+    text-transform: uppercase;
 }
 
 /**/
@@ -54,6 +38,48 @@
     color: #CD3700;
     transition: 0.1s;
 }
+
+/*.login-button{
+    font-size: medium;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+    float: right;
+}*/
+
+/**/
+/*.login-button a:hover {
+    color: #cf5b30;
+}*/
+
+/**/
+.navbar-light{
+    color: #0e2133;
+    height: 5rem;
+}
+
+.navbar-toggler {
+    color: #CD3700;
+}
+
+.navbar a {
+    color: #0e2133;
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar-collapse {
+    background-color: white;
+    text-indent: 20px;
+}
+
+.navbar a:hover {
+    color: #CD3700;
+}
+
 
 .member-nav:hover {
     color: #cf5b30;
@@ -346,6 +372,10 @@ footer {
 
 @media screen and (max-width: 1200px) {
 
+    .logo-bar {
+        padding-left: 10px;
+    }
+    
     .logo {
         font-size: 3rem;
     }
@@ -481,15 +511,28 @@ footer {
     .logo {
         font-size: 1.5rem;
     }
-
-    .login-button{
-        height: 20px;
-        font-size: 1rem;
-        margin-top: -2px;
-        margin-right: 1rem;
-        letter-spacing: 0.2rem;
-
+    .top-bar {
+        background-color: #0e2133;
+        padding: 10px;
     }
+    
+    
+    .logo-bar a {
+        color: #CD3700;
+    }
+    
+    /**/
+    .member-nav {
+        font-size: 0.6rem;
+        border: 1px solid #CD3700;
+        border-radius: 10px;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-right: 0.5rem;
+        float: right;
+        text-transform: uppercase;
+    }
+
 
     .navbar {
         height: 3rem;
