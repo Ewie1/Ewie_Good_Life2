@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views import generic, View
 from goodlife.models import BookTrainer
 from .forms import BookTrainerForm
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -23,7 +25,8 @@ def book_trainer(request):
         if booking.is_valid():
             reservation = booking.save(commit=True)
             reservation.save()
-
+            messages.success(request, 'Your are booked in!')
+            
     context = {
         'booking': booking
     }

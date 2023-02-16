@@ -85,6 +85,12 @@
     color: #cf5b30;
 }
 
+#msg {
+    z-index: 2;
+    background-color: rgba(240, 240, 240, 0.888);
+    position: absolute;
+}
+
 /**/
 .login-message {
     z-index: 2;
@@ -638,6 +644,25 @@ footer {
 
     .media-links {
         font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        margin: 20px;
+        margin-left: 60px;
+    }
+
+    .booking-form {
+        padding-top: 30px;
+        margin-left: -10px;
+    }
+
+    .booking-form input{
+        margin: 2px;
+    }
+
+    .booking-form label {
+        margin: 10px;
+
     }
 
 }
