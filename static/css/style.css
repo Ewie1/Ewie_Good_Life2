@@ -103,7 +103,7 @@
     background: url('../images/heroimage.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
-    padding-right: 15px;
+    overflow: hidden;
 }
 
 /**/
@@ -192,11 +192,12 @@
 
 /**/
 .trainer {
-    height: 100%;
-    width: 50%;
-    border-radius: 20px;
+    background: url('../images/trainer3.jpg');
+    height: 200px;
+    width: 60%;
     background-size: cover;
     background-position: center;
+    border-radius: 20px;
     margin-top: 2rem;
     margin-left: 7rem;
     z-index: 1;
@@ -234,14 +235,12 @@
 }
 
 .overlay {
-    background: url('../images/signupimage.jpeg')no-repeat center center;
+   /* background: url('../images/signupimage.jpeg')no-repeat center center;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     z-index: -1;
-    position: absolute;
     height: 100%;
-    display: block;
-   /* background: rgba(0,0,0,0.5);*/
+    background: rgba(1, 9, 62, 0.5);
 }
 
 .booking-form {
@@ -360,12 +359,13 @@ footer {
 }
 
 .about-image {
+    background: url('../images/crossfitsimage.jpg');
+    background-size: cover;
+    background-position: center;
     height: 300px;
     width: 300px;
     border-radius: 40px;
     margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
     margin-top: 2rem;
     margin-left: 50px;
 }
@@ -375,8 +375,13 @@ footer {
     height: 300px;
     width: 50%;
     border-radius: 40px;
-    line-height: 2rem;
-    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.about-text hr {
+    margin-top: 30px;
+    margin-left: 120px;
 }
 
 .mem-card-position {
@@ -447,8 +452,6 @@ footer {
     .card-position{
         margin-top: 50px;
         margin-left: 0px;
-        
-
     } 
     
     /*.card-2 {
@@ -464,8 +467,6 @@ footer {
     .trainer-images{
         margin-left: 0px;
     }
-    
-    
     
     /**/
     .trainer {
@@ -489,6 +490,10 @@ footer {
         height: 100%;
         display: block;
        /* background: rgba(0,0,0,0.5);*/
+    }
+
+    .about-text hr {
+        margin-left: 100px;
     }
     
     .booking-form {
@@ -623,7 +628,7 @@ footer {
     }
 
     .trainer {
-        height: 80%;
+        
         width: 80%;
         margin-left: 2rem;
     }
@@ -638,6 +643,10 @@ footer {
         border-radius: 40px;
         line-height: 2rem;
         font-size: 1rem;
+    }
+
+    .about-text hr {
+        margin-left: 60px;
     }
     
     .about-text-1 {

@@ -95,9 +95,13 @@
 
         {% block content %}
         <!-- Content Goes here -->
-        <div class="row no-gutters">
+        <div class="row">
           <div class="col-sm-12">
-            <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image">
+            <div class="hero-image">
+              <div class="overlay"></div>
+            </div>
+            
+           <!-- <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image"> -->
           </div>
         </div>
       <div class="welcome container">
@@ -151,20 +155,23 @@
         <div class="row select-trainer">
           <h3 class="text-center">Select a Trainer:</h3>
           <div class="col-md-4 col-sm-12 trainer-images">
-            <a href="{% url 'book_trainer' %}">
-              <img class="mr-3 justify-content-center trainer" src="static/images/trainer3.jpg" alt="Generic placeholder image">
+            <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
+              <!--<img src="static/images/trainer3.jpg" alt="Generic placeholder image" class="trainer">-->
+              <div class="trainer"></div>
             </a>
             <p>Frank</p>
           </div>
           <div class="col-md-4 col-sm-12">
-            <a href="{% url 'book_trainer' %}">
-            <img class="mr-3 trainer" src="static/images/trainer4.jpg" alt="Generic placeholder image">
+            <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
+           <!--- <img class="trainer" src="static/images/trainer4.jpg" alt="Generic placeholder image">-->
+           <div class="trainer"></div>
             </a>
             <p>Oscar</p>
           </div>
           <div class="col-md-4 col-sm-12">
-            <a href="{% url 'book_trainer' %}">
-            <img class="mr-3 trainer" src="static/images/trainer5.jpg" alt="Generic placeholder image">
+            <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
+           <!-- <img class="trainer" src="static/images/trainer5.jpg" alt="Generic placeholder image">-->
+           <div class="trainer"></div>
             </a>
             <p>Frida</p>
           </div>
