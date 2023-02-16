@@ -159,6 +159,10 @@
     font-style: italic;
 }
 
+.trainer-images{
+    margin-left: -20px;
+}
+
 .select-trainer h3 {
     font-weight: 900;
     font-style: italic;
@@ -183,7 +187,7 @@
 }
 
 .trainer-row {
-    margin-left: 8rem;
+    margin-left: 7rem;
 }
 
 /**/
@@ -275,6 +279,22 @@ hr {
     margin-top: 200px;
 }
 
+.register-form, .login-form {
+    height: 600px;
+    background: rgba(240, 240, 240, 0.888); 
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.logout-form {
+    height: 600px;
+    background: rgba(240, 240, 240, 0.888);
+    text-align: center;
+    padding-top: 200px;
+
+}
+
 .register-form h1, 
 .login-form h1, 
 .logout-form h3, 
@@ -307,6 +327,7 @@ hr {
     color: #fff;
     border: 1px solid black;
 }
+
 
 footer {
     height: 300px;
@@ -439,6 +460,10 @@ footer {
     .get-trainer {
         margin-bottom: 4rem;
     }
+
+    .trainer-images{
+        margin-left: 0px;
+    }
     
     
     
@@ -570,10 +595,10 @@ footer {
     }
 
 
-    .navbar {
-        height: 3rem;
+    #navbarCollapse {
+        font-size: 0.5rem;
     }
-    
+
     .map {
         width: 100%;
     }
@@ -633,6 +658,10 @@ footer {
         margin-bottom: 30px;
     }
 
+    .mem-card-color p {
+        margin-top: 1.5rem;
+    }
+
     .contact-us {
         font-size: 0.6rem;
     }
@@ -653,7 +682,6 @@ footer {
 
     .booking-form {
         padding-top: 30px;
-        margin-left: -10px;
     }
 
     .booking-form input{
@@ -662,7 +690,32 @@ footer {
 
     .booking-form label {
         margin: 10px;
+    }
 
+    .signup label{
+        height: 30%;
+        width: 30%;
+        font-size: 0.8rem;
+    }
+
+    .sigup input  {
+        height: 30%;
+        width: 30%;
+        font-size: 0.8rem;
+    }
+
+    .btn-signup {
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    .primaryAction {
+        margin-top: 30px;
+
+    }
+
+    .btn-logout {
+        margin-top: 40px;
     }
 
 }
