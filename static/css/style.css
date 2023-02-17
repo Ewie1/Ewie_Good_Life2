@@ -461,6 +461,32 @@ footer {
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* style for 404 page cover image and error message */
+
+#error {
+    height: 500px;
+    width: 100%;
+    background: url('../images/404er.jpeg')no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+} 
+
+#error>h1 {
+    margin-top: 100px;
+    text-align: center;
+    color: #CD3700;
+    font-size: 160px;
+    font-weight: 800;
+}
+
+#error>p {
+    text-align: center;
+    color: #CD3700;
+    font-size:larger;
+    font-weight: 600;
+
+}
 
 
 /*For large to medium screens sizes from 1200px wide and down */
@@ -797,6 +823,12 @@ footer {
 
     .btn-logout {
         margin-top: 40px;
+    }
+
+    #error {
+        background-size: contain;
+        margin-top: -10px;
+        margin-bottom: -10px;
     }
 
 }
