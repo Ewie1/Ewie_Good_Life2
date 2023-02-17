@@ -159,9 +159,7 @@
     font-style: italic;
 }
 
-.trainer-images{
-    margin-left: -20px;
-}
+
 
 .select-trainer h3 {
     font-weight: 900;
@@ -179,19 +177,14 @@
     transition: 0.5s;
 }
 
-.select-trainer p {
-    text-align: center;
-    text-decoration: none;
-    margin-left: 50px;
-    font-weight: 400;
-}
+
 
 .trainer-row {
     margin-left: 7rem;
 }
 
 /**/
-.trainer {
+.trainer-1 {
     background: url('../images/trainer3.jpg');
     height: 200px;
     width: 60%;
@@ -199,7 +192,31 @@
     background-position: center;
     border-radius: 20px;
     margin-top: 2rem;
-    margin-left: 7rem;
+    margin-left: 4rem;
+    z-index: 1;
+}
+
+.trainer-2 {
+    background: url('../images/trainer4.jpg');
+    height: 200px;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    z-index: 1;
+}
+
+.trainer-3 {
+    background: url('../images/trainer5.jpg');
+    height: 200px;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-left: 4rem;
     z-index: 1;
 }
 
@@ -207,6 +224,12 @@
     box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
     
+}
+
+.select-trainer p {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 /*.background-greyout {
@@ -358,8 +381,32 @@ footer {
     font-size: 2rem;
 }
 
-.about-image {
+.about-image-1 {
     background: url('../images/crossfitsimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    margin-top: 2rem;
+    margin-left: 50px;
+}
+
+.about-image-2 {
+    background: url('../images/trainer.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    margin-top: 2rem;
+    margin-left: 50px;
+}
+
+.about-image-3 {
+    background: url('../images/outdoorimage.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -415,6 +462,7 @@ footer {
 }
 
 
+
 /*For large to medium screens sizes from 1200px wide and down */
 
 @media screen and (max-width: 1200px) {
@@ -464,33 +512,46 @@ footer {
         margin-bottom: 4rem;
     }
 
-    .trainer-images{
+   /* .trainer-images{
+        width: 100%;
         margin-left: 0px;
-    }
+    }*/
     
     /**/
-    .trainer {
+    .trainer-1 {
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
+
+    .trainer-2 {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .trainer-3 {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
     
     
-    .booking-header {
+    
+/*.booking-header {
         text-align: center;
         height: 300px;
         margin-top: 50px;
     }
     
     .overlay {
-        background: url('../images/signupimage.jpeg')no-repeat center center;
+      /*  background: url('../images/signupimage.jpeg')no-repeat center center;
         background-size: cover;
         background-position: center;
         z-index: -1;
         position: absolute;
         height: 100%;
         display: block;
-       /* background: rgba(0,0,0,0.5);*/
-    }
+       /* background: rgba(0,0,0,0.5);
+    }*/
 
     .about-text hr {
         margin-left: 100px;
@@ -537,10 +598,18 @@ footer {
         margin-top: 30px;
     }
 
-    .about-image {
+    .about-image-1 {
         margin-left: 0px;
     }
-    
+
+    .about-image-2 {
+        margin-left: 0px;
+    }
+
+    .about-image-3 {
+        margin-left: 0px;
+    }
+
     .about-text {
         font-size: 1rem;
     }
@@ -562,12 +631,6 @@ footer {
         margin-left: -1rem;
         margin-top: 30px;
     }
-
-    .select-trainer p {
-        text-align: center;
-        margin-left: 0px;
-    }
-    
 
 }
 
@@ -627,8 +690,17 @@ footer {
         margin-top: 50px;
     }
 
-    .trainer {
-        
+    .trainer-1 {
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .trainer-2 {
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .trainer-3 {
         width: 80%;
         margin-left: 2rem;
     }
