@@ -17,13 +17,13 @@
 }
 
 .logo-bar a {
-    color: #CD3700;
+    color: #fa561b;;
 }
 
 /**/
 .member-nav {
     font-weight: 600;
-    border: 1px solid #CD3700;
+    border: 1px solid #fa561b;;
     border-radius: 10px;
     font-weight: 600;
     margin-top: 20px;
@@ -136,7 +136,7 @@
    
 .card-header{
     background-color: #0e2133;
-    color: #CD3700;
+    color: #fa561b;;
     font-size: larger;
     font-weight: 900;
 }
@@ -377,11 +377,11 @@ footer {
 
 .contact-us{
     letter-spacing: 3px;
-    color: silver;
+    color: #fff;
 }
 
 .media-links{
-    color: #CD3700;
+    color: #fa561b;;
     font-size: medium;
 }
 
@@ -389,7 +389,7 @@ footer {
     font-size: 200%;
     margin: 1px;
     padding: 10px;
-    color: #CD3700;
+    color: #fa561b;;
     clear: both;
 }
 
@@ -463,12 +463,12 @@ footer {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 900;
-    color: #CD3700;
+    color: #fa561b;;
     margin-top: 5rem;
 }
 
 .mem-card-color a {
-    color: #CD3700;
+    color: #fa561b;;
 }
 
 .mem-card-color a:hover {
