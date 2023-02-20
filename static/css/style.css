@@ -97,6 +97,10 @@
 }
 
 /**/
+.hero-image-outer {
+    overflow: hidden;
+}
+
 .hero-image {
     height: 500px;
     width: 100%;
@@ -308,6 +312,17 @@ hr {
     padding-top: 100px;
 }
 
+/*.register-form {
+    height: 500px;
+    width: 100%;
+    background: url('../images/signupimage .jpeg')no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 100px;
+}*/
+
 
 .logout-form {
     height: 600px;
@@ -348,6 +363,10 @@ hr {
     border-radius: 5px;
     color: #fff;
     border: 1px solid black;
+}
+
+.errorlist {
+    list-style: none;
 }
 
 
@@ -831,5 +850,23 @@ footer {
         margin-bottom: -10px;
     }
 
+    .hero-image {
+        background-size: contain;
+        margin-top: -160px;
+        margin-bottom: -160px;
+    }
+
+    .overlay {
+        background-size: contain;
+    }
+
+    /*.hero-image {
+        height: 500px;
+        width: 100%;
+        background: url('../images/heroimage.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }*/
+
 }
-    
