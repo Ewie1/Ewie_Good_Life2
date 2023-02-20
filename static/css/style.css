@@ -297,7 +297,7 @@ hr {
     margin-left: 40%;
     display: block;
     width: 200px;
-    background: #CD3700;
+    background: #fa561b;
     border: none;
 }
 
@@ -343,12 +343,12 @@ hr {
 .register-form a, 
 .login-form a {
     text-decoration: none;
-    color: #CD3700;
+    color: #fa561b;;
 }
 
 .register-form a:hover, 
 .login-form a:hover {
-    color: #CD3700;
+    color: #fa561b;;
     border-bottom: 1px solid #CD3700;
     transition: 0.5s;
 }
@@ -358,7 +358,7 @@ hr {
 .btn-logout {
     height: 40px;
     width: 200px;
-    background: #CD3700;
+    background: #fa561b;
     border: none;
     border-radius: 5px;
     color: #fff;
