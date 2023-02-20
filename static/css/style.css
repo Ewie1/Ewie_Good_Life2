@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 /**/
 .top-bar {
     background-color: #0e2133;
@@ -17,13 +18,15 @@
 }
 
 .logo-bar a {
-    color: #fa561b;;
+    color: #fa561b;
+    ;
 }
 
 /**/
 .member-nav {
     font-weight: 600;
-    border: 1px solid #fa561b;;
+    border: 1px solid #fa561b;
+    ;
     border-radius: 10px;
     font-weight: 600;
     margin-top: 20px;
@@ -54,7 +57,7 @@
 }*/
 
 /**/
-.navbar-light{
+.navbar-light {
     color: #0e2133;
     height: 5rem;
 }
@@ -126,28 +129,29 @@
 }
 
 /**/
-.home-card-dimension{
+.home-card-dimension {
     width: 20rem;
     height: 24rem;
     box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.2);
     line-height: 40px;
     border-radius: 15px;
 }
-   
-.card-header{
+
+.card-header {
     background-color: #0e2133;
-    color: #fa561b;;
+    color: #fa561b;
+    ;
     font-size: larger;
     font-weight: 900;
 }
 
-.card-position{
+.card-position {
     margin-left: 8rem;
     margin-top: 80px;
-}  
+}
 
-.card-body i{
-    color: rgb(64, 224, 64);  
+.card-body i {
+    color: rgb(64, 224, 64);
 }
 
 
@@ -227,7 +231,7 @@
 .trainer:hover {
     box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
-    
+
 }
 
 .select-trainer p {
@@ -262,7 +266,7 @@
 }
 
 .overlay {
-   /* background: url('../images/signupimage.jpeg')no-repeat center center;
+    /* background: url('../images/signupimage.jpeg')no-repeat center center;
     background-size: cover;
     background-position: center;*/
     z-index: -1;
@@ -277,8 +281,8 @@
     margin-bottom: 200px;
     background-color: #fff;
     z-index: 2;
-    text-align: center; 
-    background-color: rgba(240, 240, 240, 0.888); 
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.888);
     border-radius: 5px;
 }
 
@@ -305,9 +309,10 @@ hr {
     margin-top: 200px;
 }
 
-.register-form, .login-form {
+.register-form,
+.login-form {
     height: 600px;
-    background: rgba(240, 240, 240, 0.888); 
+    background: rgba(240, 240, 240, 0.888);
     text-align: center;
     padding-top: 100px;
 }
@@ -332,29 +337,31 @@ hr {
 
 }
 
-.register-form h1, 
-.login-form h1, 
-.logout-form h3, 
+.register-form h1,
+.login-form h1,
+.logout-form h3,
 .booking-header h3 {
     font-weight: 900;
     font-style: italic;
 }
 
-.register-form a, 
+.register-form a,
 .login-form a {
     text-decoration: none;
-    color: #fa561b;;
+    color: #fa561b;
+    ;
 }
 
-.register-form a:hover, 
+.register-form a:hover,
 .login-form a:hover {
-    color: #fa561b;;
+    color: #fa561b;
+    ;
     border-bottom: 1px solid #CD3700;
     transition: 0.5s;
 }
 
-.btn-signup, 
-.primaryAction, 
+.btn-signup,
+.primaryAction,
 .btn-logout {
     height: 40px;
     width: 200px;
@@ -375,13 +382,14 @@ footer {
     background-color: #0e2133;
 }
 
-.contact-us{
+.contact-us {
     letter-spacing: 3px;
     color: #fff;
 }
 
-.media-links{
-    color: #fa561b;;
+.media-links {
+    color: #fa561b;
+    ;
     font-size: medium;
 }
 
@@ -389,11 +397,12 @@ footer {
     font-size: 200%;
     margin: 1px;
     padding: 10px;
-    color: #fa561b;;
+    color: #fa561b;
+    ;
     clear: both;
 }
 
-.about-header{
+.about-header {
     font-weight: 900;
     font-style: italic;
     margin-top: 30px;
@@ -452,10 +461,10 @@ footer {
 
 .mem-card-position {
     margin-left: 2em;
-    margin-top: 6em;  
+    margin-top: 6em;
 }
 
-.mem-card-color{
+.mem-card-color {
     background-color: #0e2133;
 }
 
@@ -463,17 +472,19 @@ footer {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 900;
-    color: #fa561b;;
+    color: #fa561b;
+    ;
     margin-top: 5rem;
 }
 
 .mem-card-color a {
-    color: #fa561b;;
+    color: #fa561b;
+    ;
 }
 
 .mem-card-color a:hover {
     font-size: 1.8rem;
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
 .card-shadow {
@@ -488,8 +499,8 @@ footer {
     background: url('../images/404er.jpeg')no-repeat center center;
     background-size: cover;
     background-position: center;
-    overflow: hidden; 
-} 
+    overflow: hidden;
+}
 
 #error>h1 {
     margin-top: 100px;
@@ -502,7 +513,7 @@ footer {
 #error>p {
     text-align: center;
     color: #CD3700;
-    font-size:larger;
+    font-size: larger;
     font-weight: 600;
 
 }
@@ -515,24 +526,24 @@ footer {
     .logo-bar {
         padding-left: 10px;
     }
-    
+
     .logo {
         font-size: 3rem;
     }
-    
-    
+
+
     /**/
     .login-message {
         z-index: 2;
     }
-    
+
     /**/
     .welcome {
         text-align: center;
         font-size: large;
         margin-top: 40px;
     }
-    
+
     .welcome h3 {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -540,28 +551,28 @@ footer {
         font-weight: 900;
         font-style: italic;
     }
-    
-    
-    .card-position{
+
+
+    .card-position {
         margin-top: 50px;
         margin-left: 0px;
-    } 
-    
+    }
+
     /*.card-2 {
         margin-top: 50px;
     }*/
-    
-    
+
+
     /**/
     .get-trainer {
         margin-bottom: 4rem;
     }
 
-   /* .trainer-images{
+    /* .trainer-images{
         width: 100%;
         margin-left: 0px;
     }*/
-    
+
     /**/
     .trainer-1 {
         width: 100%;
@@ -578,10 +589,10 @@ footer {
         margin-left: 0rem;
     }
 
-    
-    
-    
-/*.booking-header {
+
+
+
+    /*.booking-header {
         text-align: center;
         height: 300px;
         margin-top: 50px;
@@ -601,7 +612,7 @@ footer {
     .about-text hr {
         margin-left: 100px;
     }
-    
+
     .booking-form {
         height: 300px;
         padding-top: 80px;
@@ -609,21 +620,21 @@ footer {
         margin-bottom: 200px;
         background-color: #fff;
         z-index: 2;
-        text-align: center; 
-        background-color: rgba(240, 240, 240, 0.888); 
+        text-align: center;
+        background-color: rgba(240, 240, 240, 0.888);
         border-radius: 5px;
     }
-    
+
     hr {
         width: 60%;
     }
-    
+
     /* .booking-form button { 
         display: block;
         margin-left: 50%;
         margin-top: 50px;
     /* } */
-    
+
     .btn-primary {
         margin-top: 50px;
         margin-left: 40%;
@@ -632,12 +643,12 @@ footer {
         background: #CD3700;
         border: none;
     }
-    
+
     .map {
         margin-top: 100px;
     }
 
-    .about-header{
+    .about-header {
         font-weight: 900;
         font-style: italic;
         margin-top: 30px;
@@ -658,7 +669,7 @@ footer {
     .about-text {
         font-size: 1rem;
     }
-    
+
     .about-text-1 {
         margin-top: -3rem;
         margin-left: 40px;
@@ -671,7 +682,7 @@ footer {
     .about-text-3 {
         margin-left: 40px;
     }
-    
+
     .mem-card-position {
         margin-left: -1rem;
         margin-top: 30px;
@@ -685,16 +696,17 @@ footer {
     .logo {
         font-size: 1.5rem;
     }
+
     .top-bar {
         background-color: #0e2133;
         padding: 10px;
     }
-    
-    
+
+
     .logo-bar a {
         color: #CD3700;
     }
-    
+
     /**/
     .member-nav {
         font-size: 0.6rem;
@@ -720,11 +732,11 @@ footer {
         font-size: 0.8rem;
     }
 
-    .card-position{ 
-       margin-left: 18px;
-    } 
+    .card-position {
+        margin-left: 18px;
+    }
 
-    .home-card-dimension{
+    .home-card-dimension {
         height: 90%;
         width: 90%;
         line-height: 30px;
@@ -765,7 +777,7 @@ footer {
     .about-text hr {
         margin-left: 60px;
     }
-    
+
     .about-text-1 {
         text-align: center;
         margin-left: 0px;
@@ -810,7 +822,7 @@ footer {
         padding-top: 30px;
     }
 
-    .booking-form input{
+    .booking-form input {
         margin: 2px;
     }
 
@@ -818,13 +830,13 @@ footer {
         margin: 10px;
     }
 
-    .signup label{
+    .signup label {
         height: 30%;
         width: 30%;
         font-size: 0.8rem;
     }
 
-    .sigup input  {
+    .sigup input {
         height: 30%;
         width: 30%;
         font-size: 0.8rem;

@@ -1,29 +1,30 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Good Life gym for a healthy lifestyle located in Stockholm, Sweden">
-    <meta name="keywords" content="Good Life, gym, lifestyle, healthy, Stockholm, Sweden ">
-    <!--Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-    
-    <!--Favicon-->
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/apple-touch-icon.png">
 
-    <title>Good Life</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Good Life gym for a healthy lifestyle located in Stockholm, Sweden">
+  <meta name="keywords" content="Good Life, gym, lifestyle, healthy, Stockholm, Sweden ">
+  <!--Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/apple-touch-icon.png">
+
+  <title>Good Life</title>
 </head>
 
 <body>
-         <!--Header section contains logo, signup page link button and navbar menu -->
-    <div class="top-bar">     
+  <!--Header section contains logo, signup page link button and navbar menu -->
+  <div class="top-bar">
     <nav class="logo-bar">
       <a class="navbar-brand logo" href="{% url 'get_base_page' %}" aria-label="home page link">Goodlife</a>
       <!---  <ul class="navbar-nav login-button">
@@ -38,29 +39,29 @@
           {% endif %}
       </ul>-->
       <a class="nav-link member-nav" href="{% url 'account_signup' %}" aria-label="signup form link">Become A Member</a>
-  </nav>
-    </div>
+    </nav>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse container-fluid" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="{% url 'get_base_page' %}" class="nav-item nav-link" aria-label="navbar home link">Home</a>
-                <a href="{% url 'get_about_page' %}" class="nav-item nav-link"aria-label="navbar about link">About</a>
-                <a href="{% url 'account_signup' %}" class="nav-item nav-link"aria-label="navbar signup link">Signup</a>
-            </div>
-            <div class="navbar-nav ms-auto">
-              {% if user.is_authenticated %}
-                <a href="{% url 'account_logout' %}" class="nav-item nav-link" aria-label="logout link">Logout</a>
-              {% else %}
-                <a href="{% url 'account_login' %}" class="nav-item nav-link" aria-label="login link">Login</a>
-              {% endif %}
-            </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="{% url 'get_base_page' %}" class="nav-item nav-link" aria-label="navbar home link">Home</a>
+          <a href="{% url 'get_about_page' %}" class="nav-item nav-link" aria-label="navbar about link">About</a>
+          <a href="{% url 'account_signup' %}" class="nav-item nav-link" aria-label="navbar signup link">Signup</a>
         </div>
+        <div class="navbar-nav ms-auto">
+          {% if user.is_authenticated %}
+          <a href="{% url 'account_logout' %}" class="nav-item nav-link" aria-label="logout link">Logout</a>
+          {% else %}
+          <a href="{% url 'account_login' %}" class="nav-item nav-link" aria-label="login link">Login</a>
+          {% endif %}
+        </div>
+      </div>
     </div>
-</nav>
+  </nav>
   <!---  <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,42 +80,43 @@
           </ul>
         </div>
       </nav>-->
-     <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                {% for message in messages %}
-                <div class="alert alert-dismissible fade show" id="msg" role="alert">
-                  <p>{{ message | safe }}</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                {% endfor %}
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        {% for message in messages %}
+        <div class="alert alert-dismissible fade show" id="msg" role="alert">
+          <p>{{ message | safe }}</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        {% endfor %}
+      </div>
     </div>
-      <main class="flex-shrink-0 main-bg">
+  </div>
+  <main class="flex-shrink-0 main-bg">
 
-        {% block content %}
-        <!-- Content Goes here -->
-        <div class="hero-image-outer">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="hero-image">
-              <div class="overlay"></div>
-            </div>
-          </div>
-           <!-- <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image"> -->
+    {% block content %}
+    <!-- Content Goes here -->
+    <div class="hero-image-outer">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="hero-image">
+            <div class="overlay"></div>
           </div>
         </div>
-      <div class="welcome container">
-        <div class="row">
-          <div class="col-sm-12">
-        <h3>Welcome to GoodLife where life is heathier and happier!</h3>
-        <p>Make your life good through the fitness and health, 
-          so that you have access to what you need to feel mastery, progress and can take care of your physical and mental health. We give you all the tools you need to reach your goals.</p>
-          </div>
+        <!-- <img src="static/images/heroimage.jpg" class="img-fluid" alt="Responsive image"> -->
+      </div>
+    </div>
+    <div class="welcome container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Welcome to GoodLife where life is heathier and happier!</h3>
+          <p>Make your life good through the fitness and health,
+            so that you have access to what you need to feel mastery, progress and can take care of your physical and
+            mental health. We give you all the tools you need to reach your goals.</p>
         </div>
       </div>
-      <div class="container">
+    </div>
+    <div class="container">
       <div class="row card-position">
         <div class="col-md-6 col-sm-12">
           <div class="card shadow home-card-dimension">
@@ -127,7 +129,7 @@
                 <li><i class="fa-solid fa-check"></i> Progress monitored training plan</li>
                 <li><i class="fa-solid fa-check"></i> Progress monitored meal plan</li>
                 <li><i class="fa-solid fa-check"></i> Outdoor training</li>
-            </ul>
+              </ul>
             </div>
           </div>
         </div>
@@ -142,55 +144,56 @@
                 <li><i class="fa-solid fa-check"></i> Free wifi</li>
                 <li><i class="fa-solid fa-check"></i> Wind down in the Sauna</li>
                 <li><i class="fa-solid fa-check"></i> Try our Protein and Snack bar</li>
-            </ul>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <div class="col-sm-12 text-center get-trainer">
-        <h3>Book A Introduction Trainer!</h3>
-        <p><a href="{% url 'account_signup' %}" aria-label="Link to signup form">Signup</a> and book a free Personal Trainer for a week!</p>
-      </div>
-      <div class="container">
-        <div class="row select-trainer">
-          <h3 class="text-center">Select a Trainer:</h3>
-          <div class="col-md-4 col-sm-12 trainer-images">
-            {% if user.is_authenticated %}
-            <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
-              <div class="trainer-1"></div>
-            </a>
-            <p>Frank</p>
-            {% else %}
+    </div>
+    <div class="col-sm-12 text-center get-trainer">
+      <h3>Book A Introduction Trainer!</h3>
+      <p><a href="{% url 'account_signup' %}" aria-label="Link to signup form">Signup</a> and book a free Personal
+        Trainer for a week!</p>
+    </div>
+    <div class="container">
+      <div class="row select-trainer">
+        <h3 class="text-center">Select a Trainer:</h3>
+        <div class="col-md-4 col-sm-12 trainer-images">
+          {% if user.is_authenticated %}
+          <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
             <div class="trainer-1"></div>
-            <p>Frank</p>
-            {% endif %}
-          </div>
-          <div class="col-md-4 col-sm-12">
-            {% if user.is_authenticated %}
-            <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
-           <div class="trainer-2"></div>
-            </a>
-            <p>Oscar</p>
-            {% else %}
+          </a>
+          <p>Frank</p>
+          {% else %}
+          <div class="trainer-1"></div>
+          <p>Frank</p>
+          {% endif %}
+        </div>
+        <div class="col-md-4 col-sm-12">
+          {% if user.is_authenticated %}
+          <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
             <div class="trainer-2"></div>
-            <p>Oscar</p>
-            {% endif %}
-          </div>
-          <div class="col-md-4 col-sm-12">
-            {% if user.is_authenticated %}
-            <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
-           <div class="trainer-3"></div>
-            </a>
-            <p>Frida</p>
-            {% else %}
+          </a>
+          <p>Oscar</p>
+          {% else %}
+          <div class="trainer-2"></div>
+          <p>Oscar</p>
+          {% endif %}
+        </div>
+        <div class="col-md-4 col-sm-12">
+          {% if user.is_authenticated %}
+          <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
             <div class="trainer-3"></div>
-            <p>Frida</p>
-            {% endif %}
-          </div>
+          </a>
+          <p>Frida</p>
+          {% else %}
+          <div class="trainer-3"></div>
+          <p>Frida</p>
+          {% endif %}
         </div>
       </div>
-     <!--- <div class="row ">
+    </div>
+    <!--- <div class="row ">
         <div class="col-md-6 mt-3 col-sm-12">
         <h3>Opening Times</h3>
         <table>
@@ -231,57 +234,53 @@
           </div>
         </div>
       </div>-->
-      <div class="container-fluid map">
-        <div class="row">
-          <div class="col-sm-12 mt-3 text-center">
-            <h3>Find Us Here</h3>
-            <iframe style="width: 100%;"
+    <div class="container-fluid map">
+      <div class="row">
+        <div class="col-sm-12 mt-3 text-center">
+          <h3>Find Us Here</h3>
+          <iframe style="width: 100%;"
             src="https://maps.google.com/maps?q=%20Fleminggatan%202,%20112%2026%20Stockholm,%20Sweden&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-          </div>
         </div>
       </div>
-        {% endblock content %}
-    </main>
+    </div>
+    {% endblock content %}
+  </main>
 
-    <!--Footer section of page contains Contact information, address and icon links to social media-->
-    <footer class="container-fluid">
-      <div class="row contact-us">
-          <div class="col-sm-12 text-center">
-              <h4 class="uppercase">Contact Information</h4>
-                <p>0736776322 | goodlife@gmail.com</p>
-                <p>Fleminggatan2 112 26 Stockholm Sweden</p>
-          </div>
-          <hr>
-          <div class="col-sm-12 text-center media-links">
-              <h4 class="follow-us general-sub">Follow Us On Social Media</h4>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener"
-                            aria-label="Visit our facebook page (opens in a new tab)"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener"
-                            aria-label="Visit our twitter page (opens in a new tab)"><i
-                                class="fa-brands fa-square-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener"
-                            aria-label="Visit our instagram page (opens in a new tab)"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener"
-                            aria-label="Visit our youtube page (opens in a new tab)"><i
-                                class="fa-brands fa-youtube"></i></a>
-                    </li>
-                </ul>
-          </div>
+  <!--Footer section of page contains Contact information, address and icon links to social media-->
+  <footer class="container-fluid">
+    <div class="row contact-us">
+      <div class="col-sm-12 text-center">
+        <h4 class="uppercase">Contact Information</h4>
+        <p>0736776322 | goodlife@gmail.com</p>
+        <p>Fleminggatan2 112 26 Stockholm Sweden</p>
       </div>
+      <hr>
+      <div class="col-sm-12 text-center media-links">
+        <h4 class="follow-us general-sub">Follow Us On Social Media</h4>
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+              aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+              aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"
+              aria-label="Visit our instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener"
+              aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
-    <!-- font awesome script-->
-    <script src="https://kit.fontawesome.com/4847b8087f.js" crossorigin="anonymous"></script>
-    <script src="static/js/book.js"></script>
-    <script>
-      setTimeout(function () {
-          let messages = document.getElementById('msg');
-          let alert = new bootstrap.Alert(messages);
-          alert.close();
-      }, 1500);
+  <!-- font awesome script-->
+  <script src="https://kit.fontawesome.com/4847b8087f.js" crossorigin="anonymous"></script>
+  <script src="static/js/book.js"></script>
+  <script>
+    setTimeout(function () {
+      let messages = document.getElementById('msg');
+      let alert = new bootstrap.Alert(messages);
+      alert.close();
+    }, 1500);
   </script>
 </body>
 
