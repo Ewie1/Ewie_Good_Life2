@@ -156,25 +156,37 @@
         <div class="row select-trainer">
           <h3 class="text-center">Select a Trainer:</h3>
           <div class="col-md-4 col-sm-12 trainer-images">
+            {% if user.is_authenticated %}
             <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
-              <!--<img src="static/images/trainer3.jpg" alt="Generic placeholder image" class="trainer">-->
               <div class="trainer-1"></div>
             </a>
             <p>Frank</p>
+            {% else %}
+            <div class="trainer-1"></div>
+            <p>Frank</p>
+            {% endif %}
           </div>
           <div class="col-md-4 col-sm-12">
+            {% if user.is_authenticated %}
             <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
-           <!--- <img class="trainer" src="static/images/trainer4.jpg" alt="Generic placeholder image">-->
            <div class="trainer-2"></div>
             </a>
             <p>Oscar</p>
+            {% else %}
+            <div class="trainer-2"></div>
+            <p>Oscar</p>
+            {% endif %}
           </div>
           <div class="col-md-4 col-sm-12">
+            {% if user.is_authenticated %}
             <a href="{% url 'book_trainer' %}" aria-label="Book a trainer">
-           <!-- <img class="trainer" src="static/images/trainer5.jpg" alt="Generic placeholder image">-->
            <div class="trainer-3"></div>
             </a>
             <p>Frida</p>
+            {% else %}
+            <div class="trainer-3"></div>
+            <p>Frida</p>
+            {% endif %}
           </div>
         </div>
       </div>
