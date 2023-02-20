@@ -25,7 +25,7 @@
          <!--Header section contains logo, signup page link button and navbar menu -->
     <div class="top-bar">     
     <nav class="logo-bar">
-      <a class="navbar-brand logo" href="{% url 'get_base_page' %}">Goodlife</a>
+      <a class="navbar-brand logo" href="{% url 'get_base_page' %}" aria-label="home page link">Goodlife</a>
       <!---  <ul class="navbar-nav login-button">
           {% if user.is_authenticated %}
           <li class="nav-item">
@@ -37,7 +37,7 @@
           </li>
           {% endif %}
       </ul>-->
-      <a class="nav-link member-nav" href="{% url 'account_signup' %}">Become A Member</a>
+      <a class="nav-link member-nav" href="{% url 'account_signup' %}" aria-label="signup form link">Become A Member</a>
   </nav>
     </div>
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -47,15 +47,15 @@
         </button>
         <div class="collapse navbar-collapse container-fluid" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="{% url 'get_base_page' %}" class="nav-item nav-link">Home</a>
-                <a href="{% url 'get_about_page' %}" class="nav-item nav-link">About</a>
-                <a href="{% url 'account_signup' %}" class="nav-item nav-link">Signup</a>
+                <a href="{% url 'get_base_page' %}" class="nav-item nav-link" aria-label="navbar home link">Home</a>
+                <a href="{% url 'get_about_page' %}" class="nav-item nav-link"aria-label="navbar about link">About</a>
+                <a href="{% url 'account_signup' %}" class="nav-item nav-link"aria-label="navbar signup link">Signup</a>
             </div>
             <div class="navbar-nav ms-auto">
               {% if user.is_authenticated %}
-                <a href="{% url 'account_logout' %}" class="nav-item nav-link">Logout</a>
+                <a href="{% url 'account_logout' %}" class="nav-item nav-link" aria-label="logout link">Logout</a>
               {% else %}
-                <a href="{% url 'account_login' %}" class="nav-item nav-link">Login</a>
+                <a href="{% url 'account_login' %}" class="nav-item nav-link" aria-label="login link">Login</a>
               {% endif %}
             </div>
         </div>
@@ -150,7 +150,7 @@
       </div>
       <div class="col-sm-12 text-center get-trainer">
         <h3>Book A Introduction Trainer!</h3>
-        <p><a href="{% url 'account_signup' %}">Signup</a> and book a free Personal Trainer for a week!</p>
+        <p><a href="{% url 'account_signup' %}" aria-label="Link to signup form">Signup</a> and book a free Personal Trainer for a week!</p>
       </div>
       <div class="container">
         <div class="row select-trainer">
@@ -247,13 +247,13 @@
     <footer class="container-fluid">
       <div class="row contact-us">
           <div class="col-sm-12 text-center">
-              <h5 class="uppercase general-sub">Contact Information</h5>
+              <h4 class="uppercase">Contact Information</h4>
                 <p>0736776322 | goodlife@gmail.com</p>
                 <p>Fleminggatan2 112 26 Stockholm Sweden</p>
           </div>
           <hr>
           <div class="col-sm-12 text-center media-links">
-              <h5 class="follow-us general-sub">Follow Us On Social Media</h5>
+              <h4 class="follow-us general-sub">Follow Us On Social Media</h4>
                 <ul class="list-unstyled">
                     <li>
                         <a href="https://facebook.com" target="_blank" rel="noopener"
