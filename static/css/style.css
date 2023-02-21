@@ -107,7 +107,7 @@
 .hero-image {
     height: 500px;
     width: 100%;
-    background: url('../images/heroimage.jpg') no-repeat center center;
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935976/static/images/heroimage.26585f24439c.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
     overflow: hidden;
