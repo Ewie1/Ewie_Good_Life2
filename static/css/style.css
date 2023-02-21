@@ -193,7 +193,7 @@
 
 /**/
 .trainer-1 {
-    background: url('../images/trainer3.jpg');
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935978/static/images/trainer3.55ae13fdcfea.jpg');
     height: 200px;
     width: 60%;
     background-size: cover;
@@ -205,7 +205,7 @@
 }
 
 .trainer-2 {
-    background: url('../images/trainer4.jpg');
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935977/static/images/trainer4.7e063fe3f8c0.jpg');
     height: 200px;
     width: 60%;
     background-size: cover;
@@ -217,7 +217,7 @@
 }
 
 .trainer-3 {
-    background: url('../images/trainer5.jpg');
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935974/static/images/trainer5.0f2e38359f6c.jpg');
     height: 200px;
     width: 60%;
     background-size: cover;
@@ -413,7 +413,7 @@ footer {
 }
 
 .about-image-1 {
-    background: url('../images/crossfitsimage.jpg');
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935973/static/images/crossfitsimage.7ab366688089.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -425,7 +425,7 @@ footer {
 }
 
 .about-image-2 {
-    background: url('../images/trainer.jpg');
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935973/static/images/trainer.1083f5d8ab6b.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -437,7 +437,7 @@ footer {
 }
 
 .about-image-3 {
-    background: url('../images/outdoorimage.jpg');
+    background: url('https://res.cloudinary.com/deipzfplq/image/upload/v1676935980/static/images/outdoorimage.edcf42f83a93.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
